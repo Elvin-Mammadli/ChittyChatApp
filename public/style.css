@@ -1,0 +1,159 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 10%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* login.html styles */
+
+.login-container {
+  width: 250px;
+  background-color: rgb(72, 133, 255);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-header > h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+.label-username, .label-room {
+  margin-bottom: 5px;
+}
+
+.login-form > input#login-username, #room  {
+  margin-bottom: 10px;
+}
+
+input#login-username, #room {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+.submit {
+  padding: 5px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* chat.html styles */
+
+.chat-container {
+  width: 80vw;
+}
+
+header.chat-header {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: rgb(68, 68, 255);
+}
+
+.chat-logo > h2 {
+  color: white;
+}
+
+.leave-btn {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: tomato;
+  color: white;
+  font-size: 16px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  background-color: rgb(122, 122, 255);
+}
+
+div.left {
+  width: 20%;
+  padding: 10px 20px;
+  color: white;
+}
+
+div.left > h3 {
+  margin-bottom: 5px;
+}
+
+h3.chat-username-header {
+  margin: 20px 0;
+}
+
+li.myName {
+  font-size: 18px;
+  color: rgb(64, 255, 47);
+  text-decoration: underline;
+}
+
+div.left > p, li {
+  margin: 0 10px;
+}
+
+div.right {
+  width: 100%;
+  height: 500px;
+  background-color: white;
+  overflow: auto;
+  padding: 15px 30px;
+}
+
+div.message-box {
+  background-color: rgb(228, 228, 255);
+  margin-bottom: 5px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+li {
+  list-style: none;
+}
+
+footer {
+  display: flex;
+  padding: 15px 30px;
+  background-color: rgb(68, 68, 255);
+}
+
+footer > .chat-message-box {
+  width: 100%;
+  margin-right: 5px;
+  padding: 10px;
+  outline: none;
+  border-radius: 5px;
+  border: none  ;
+}
+
+button.chat-send {
+  width: 100px;
+  border: none;
+  background-color: cornflowerblue;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
