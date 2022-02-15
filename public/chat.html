@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="chat-container">
+    <header class="chat-header">
+      <div class="chat-logo">
+        <h2>ChittyChat</h2>
+      </div>
+      <button class="leave-btn">Leave room</button>
+    </header>
+    <main>
+      <div class="left">
+        <h3 class="room-name">Room Name:</h3>
+        <p class="room-number"></p>
+        <h3 class="chat-username-header">Users:</h3>
+        <ul class="chat-usernames">
+          <li class="myName"></li>
+        </ul>
+      </div>
+      <div class="right"></div>
+    </main>
+    <footer>
+      <input class="chat-message-box" value=''>
+      <button class="chat-send">Send</button>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.2/qs.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="client.js"></script>
+</body>
+
+</html>
